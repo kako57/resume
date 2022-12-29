@@ -5,7 +5,9 @@
 % License : MIT
 %------------------------
 
+
 \documentclass[letterpaper,11pt]{article}
+% \documentclass[letterpaper,12pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -31,7 +33,6 @@
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
-
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -112,88 +113,135 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Andre Cura} \\ \vspace{1pt}
-    \small 647-674-2715 $|$ \href{mailto:ajlcura@gmail.com}{\underline{ajlcura@gmail.com}} $|$ 
-    \href{https://linkedin.com/in/dre-c-296434195}{\underline{linkedin.com/in/dre-c-296434195}} $|$
-    \href{https://github.com/kako57}{\underline{github.com/kako57}} $|$
-    \href{https://kako57.github.io}{\underline{kako57.github.io}}\\
+  % \textbf{\Huge \scshape Andre Cura} \\ \vspace{1pt}
+  \textbf{\Huge Andre Cura} \\ \vspace{1pt}
+  \small 647-674-2715 $|$ Toronto, ON $|$ \href{mailto:ajlcura@gmail.com}{\underline{ajlcura@gmail.com}} $|$
+  \href{https://linkedin.com/in/dre-c-296434195}{\underline{linkedin.com/in/dre-c-296434195}} $|$
+  \href{https://github.com/kako57}{\underline{github.com/kako57}} $|$
+  \href{https://kako57.github.io}{\underline{kako57.github.io}}\\
 \end{center}
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, C/C++, SQL (Postgres), JavaScript, TypeScript, HTML/CSS} \\
-     \textbf{Frameworks}{: React, React Native, Expo, Node.js, NestJS, Express.js} \\
-     \textbf{Developer Tools}{: Git, Jira, Bitbucket Pipelines, Docker, AWS (S3, EC2, Elastic Beanstalk), Visual Studio Code, Ghidra, GDB, x64dbg} \\
-     \textbf{Libraries}{: knex.js, TypeORM, GraphQL, Bootstrap, angr, pwntools, z3}
-    }}
- \end{itemize}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+                \textbf{Languages}{:  JavaScript (ES6), TypeScript, HTML, CSS, SQL (Postgres), Python, C/C++} \\
+                \textbf{Frameworks}{: React, React Native, Expo, Node.js, NestJS, Express.js} \\
+                \textbf{Developer Tools}{: Visual Studio Code, Git, Jira, Bitbucket, Docker} \\
+                \textbf{Libraries}{: Bootstrap, GraphQL, knex.js, TypeORM}
+          }}
+\end{itemize}
 
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Part-time Software Developer}{September 2021 -- September 2022}
-      {Tasttlig Corporation}{Toronto, ON}
-      \resumeItemListStart
-        \resumeItem{Updated and maintained a mobile application that uses React Native and Expo}
-        \resumeItem{Created a new version of the company's fullstack application
-        using NestJS, GraphQL, TypeORM, and React with TypeScript}
-        \resumeItem{Implemented new features to the old version of the company's backend application}
-        \resumeItem{Debugged and fixed bugs in the festival application for both the web and mobile versions}
-        \resumeItem{Trained new developers on the company's codebase}
-        \resumeItem{Worked in an agile environment using Jira}
-        \resumeItem{Monitored and maintained the company's CI/CD pipeline using Bitbucket Pipelines}
-      \resumeItemListEnd
-      
+\resumeSubheading
+{Tasttlig Corporation}{Toronto, ON}
+{Part-time Software Developer}{September 2021 -- July 2022}
+
+\resumeItemListStart
+\vspace{0.5em}
+\vspace{0.5em}
+\hspace{-1.3em}
+\small{Food Festivals Web Application $|$ \emph{React, Node.js, Express.js, knex.js, PostgreSQL}}
+\resumeItem{Added search features for business and products in the database}
+\resumeItem{Extended a form library to support input fields for addresses using React Google Places Autocomplete}
+\resumeItem{Implemented a feature that allows to pin business entities on a map with Google Maps JavaScript API}
+\resumeItem{Implemented a workflow for providing payouts to businesses using Stripe}
+\resumeItem{Discovered and addressed a security vulnerability in the payment workflow}
+
+\vspace{0.5em}
+\hspace{-1.3em}
+\small{Rewrite of Food Festivals Platform $|$ \emph{React, TypeScript, Node.js, NestJS, TypeORM, PostgreSQL}}
+\resumeItem{Implemented a password reset workflow in the backend with an email service using NestJS mailer module}
+\resumeItem{Created the business entity in the backend and implented CRUD for it, including implementation of the business registration workflow}
+\resumeItem{Added support for determining location of businesses from their addresses using Google Geocoding API}
+
+\vspace{0.5em}
+\hspace{-1.3em}
+\small{Food Festivals Mobile Application $|$ \emph{React Native, Expo}}
+\resumeItem{Refactored forms to use Formik and Yup for validation}
+\resumeItem{Upgraded and refactored the application to target Android Level 30}
+\resumeItem{Updated workflows for sign up, business registration and login}
+% \resumeItem{Implemented a feature that allows to pin business entities on a map with Google Maps JavaScript API and Google Geocoding API}
+
+% \resumeItem{Implemented new features to the old version of the company's backend application}
+% \resumeItem{Debugged and fixed bugs in the festival application for both the web and mobile versions}
+% \resumeItem{Trained new developers on the company's codebase}
+% \resumeItem{Worked in an agile environment using Jira}
+% \resumeItem{Monitored and maintained the company's CI/CD pipeline using Bitbucket Pipelines}
+\resumeItemListEnd
+
 % -----------Multiple Positions Heading-----------
-   \resumeSubSubheading
-    {Software Developer Intern}{June 2021 -- August 2021}
-    \resumeItemListStart
-      \resumeItem{Kickstarted a portfolio site for the company using React.js, HTML, CSS}
-      \resumeItem{Maintained the company's festival application using React.js, Node.js, Express.js, and PostgreSQL}
-      \resumeItem{Discovered, reported, and fixed two security vulnerabilities
-      in the payment workflow of the festival web application}
-    \resumeItemListEnd
-   % \resumeSubHeadingListEnd
+\resumeSubSubheading
+{Software Developer Intern}{June 2021 -- August 2021}
+\resumeItemListStart
+\vspace{0.5em}
+\vspace{0.5em}
+\hspace{-1.3em}
+\small{Portfolio Website $|$ \emph{React, CSS}}
+\resumeItem{Developed a static website which served as a portfolio site for the company}
+% \resumeItem{Extracted and parsed data from Excel spreadsheet using SheetJS,
+%   which is then mapped to the portfolio site as React components}
+
+\vspace{0.5em}
+\hspace{-1.3em}
+\small{Food Handler Certification Course Platform $|$ \emph{React, Bootstrap, Node.js, Express.js, knex.js, PostgreSQL}}
+\resumeItem{Implemented a new feature to one of the platforms of the company that food handler certification courses platform
+  of the company to allow users to upload documents and submit course information, using AWS S3 for file storage and PDF.js for document viewing}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
 %-------------------------------------------
 
-  \resumeSubHeadingListEnd
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of Toronto}{Toronto, ON}
+{Honours Bachelor of Science in Life Sciences, Major in Neuroscience}{September 2020 -- April 2024}
+\resumeSubheading
+{Microsoft Certified: Azure Fundamentals}{}
+{Issued September 2022}{}
+\resumeSubheading
+{Microsoft Certified: Security, Compliance, and Identity Fundamentals}{}
+{Issued November 2022}{}
 
+\resumeSubHeadingListEnd
+%-------------------------------------------
 
+%-----------EXTRACURRICULARS-----------
 \section{Extra-Curriculars}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Capture the Flag (CTF) Player}{November 2021 -- Present}
-      {University of Toronto Capture the Flag (UofTCTF)}{Toronto, ON}
-      \resumeItemListStart
-        \resumeItem{Participated in CTF competitions}
-        \resumeItem{Solved challenges using Python, C/C++, and Bash}
-        \resumeItem{Reverse engineered binaries using Ghidra}
-        \resumeItem{Debugged binaries using GDB and x64dbg}
-        \resumeItem{Mainly used pwntools, angr, and z3 to solve challenges}
-        \resumeItem{Achieved 3rd place in Toronto Region for the CyberSci Regional Qualifiers 2022-23}
-        \resumeItem{Achieved 3rd place in the global standings for picoCTF 2022}
-        \resumeItem{Created writeups for challenges I solved}
-      \resumeItemListEnd
+\resumeSubheading
+{CyberSci Regional Qualifiers 2022-23}{Toronto, ON}
+{}{November 2022}
+\vspace{-1.5em}
+\resumeItemListStart
+\resumeItem{Achieved 3rd place in Toronto Region}
+\resumeItemListEnd
 
-% -----------Multiple Positions Heading-----------
-   \resumeSubSubheading
-    {Club Executive}{June 2021 -- August 2021}
-    \resumeItemListStart
-      \resumeItem{Maintained a list of all club members}
-      \resumeItem{Taught new members how to use tools and resources to solve CTF challenges}
-      \resumeItem{Organized and hosted CTF practice sessions}
-    \resumeItemListEnd
-   % \resumeSubHeadingListEnd
+\resumeSubheading
+{picoCTF 2022}{}
+{}{May 2022}
+\vspace{-1.5em}
+\resumeItemListStart
+\resumeItem{Achieved 3rd place in the global standings}
+\resumeItemListEnd
 
+\resumeSubheading
+{University of Toronto Capture the Flag (UofTCTF)}{Toronto, ON}
+{Club Executive}{June 2021 -- August 2021}
+\resumeItemListStart
+\resumeItem{Conducted learning sessions for a club of more than 500 members, with training in reverse engineering and binary exploitation}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
 %-------------------------------------------
-
-  \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 % \section{Projects}
@@ -215,21 +263,6 @@
 %             \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
 %           \resumeItemListEnd
 %     \resumeSubHeadingListEnd
-
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Toronto}{Toronto, ON}
-      {Honours Bachelor of Science in Life Sciences, Major in Neuroscience}{September 2020 -- April 2024}
-    \resumeSubheading
-      {Azure Fundamentals}{}
-      {Microsoft}{September 2022}
-    \resumeSubheading
-      {Security, Compliance, and Identity Fundamentals}{}
-      {Microsoft}{November 2022}
-  \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
