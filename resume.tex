@@ -99,6 +99,9 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+\newcommand{\Link}[2]{\href{#2}{\underline{#1}}}
+\newcommand{\CVE}[1]{\Link{CVE-#1}{https://www.cve.org/CVERecord?id=CVE-#1}} % CVE link
+
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -137,7 +140,7 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
       \textbf{Languages}{: Python, C/C++, SQL, JavaScript, TypeScript, HTML/CSS} \\
-      \textbf{Frameworks}{: angr, React, React Native, Expo, Node.js, NestJS, Express.js} \\
+      \textbf{Frameworks}{: React, React Native, Expo, Node.js, NestJS, Express.js, angr} \\
       \textbf{Developer Tools}{: Git, Jira, Docker, AWS EC2, Visual Studio Code, Ghidra, GDB, x64dbg} \\
       \textbf{Libraries}{: angr, pwntools, z3 }
     }}
@@ -148,16 +151,27 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Vulnerability Research Intern}{January 2024 -- August 2024}
+      {Vulnerability Research Intern}{January 2025 -- April 2025}
       {Trend Micro}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Analyzed container escape vulnerabilities in NVIDIA Container Toolkit}
+        \resumeItem{Authored vulnerability reports \CVE{2024-0132}, \CVE{2024-0133}, and \CVE{2024-0134}}
+        \resumeItem{Wrote detection guidance of container escape exploits in Docker and Kubernetes}
+        \resumeItem{Discovered and reported \CVE{2025-23359}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {}{January 2024 -- August 2024}
+      {}{Toronto, ON}
       \resumeItemListStart
         \resumeItem{Conducted research on newly-found vulnerabilities, found root causes, and developed proof-of-concept exploits}
         % \resumeItem{Crafted multiple exploit pathways for file struct overwrites in the most recent version of the GNU C Library}
         \resumeItem{Wrote Snort signatures to detect exploits}
-        \resumeItem{Fuzzed applications using AFL and WinAFL, and analyzed crashes using WinDbg and DynamoRIO}
-        \resumeItem{Contributed to automating the process of finding link following vulnerabilities in privileged Windows applications}
-        \resumeItem{Analyzed file operations of system-level processes using Process Monitor}
+        % \resumeItem{Fuzzed applications using AFL and WinAFL, and analyzed crashes using WinDbg and DynamoRIO}
+        % \resumeItem{Contributed to automating the process of finding link following vulnerabilities in privileged Windows applications}
+        % \resumeItem{Analyzed file operations of system-level processes using Process Monitor}
         \resumeItem{Wrote rules for detection of applications installed in Linux and Windows systems}
+        \resumeItem{Authored vulnerability report for \Link{CVE-2024-1071}{https://www.cve.org/CVERecord?id=CVE-2024-1071}}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -191,12 +205,14 @@
       {\bf{Capture the Flag (CTF) Player}}{November 2021 -- Present}
       \resumeItemListStart
         \resumeItem{Participated in CTF competitions, with \href{https://ctftime.org/team/139261/}{\underline{UofTCTF}}, and won multiple times in 2024}
-        \resumeItem{Solved challenges using Python, C/C++, and shell scripting}
-        \resumeItem{Reverse engineered binaries using Ghidra, along with angr for binary analysis, and z3 for solving constraints}
-        \resumeItem{Exploited memory corruption vulnerabilities in binaries}
-        \resumeItem{Reverse engineered virtual machine implementations}
-        \resumeItem{Achieved 2nd place in Toronto Region for the CyberSci Regional Qualifiers 2023-24}
-        \resumeItem{Achieved 2nd place in the leaderboard for undergraduate teams for picoCTF 2023}
+        % \resumeItem{Analyzed binaries with symbolic execution using angr}
+        % \resumeItem{Solved challenges using Python, C/C++, and shell scripting}
+        % \resumeItem{Reverse engineered binaries using Ghidra, along with angr for binary analysis, and z3 for solving constraints}
+        % \resumeItem{Exploited memory corruption vulnerabilities in binaries}
+        % \resumeItem{Reverse engineered virtual machine implementations}
+        \resumeItem{Specialized in binary analysis, reverse engineering, binary exploitation, and sandbox escapes}
+        % \resumeItem{Achieved 2nd place in Toronto Region for the CyberSci Regional Qualifiers 2023-24}
+        % \resumeItem{Achieved 2nd place in the leaderboard for undergraduate teams for picoCTF 2023}
       \resumeItemListEnd
 
 % -----------Multiple Positions Heading-----------
